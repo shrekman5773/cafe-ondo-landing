@@ -7,6 +7,8 @@
   --accent: #c17a4d;
   --text: #3a2c22;
   --text-soft: #7a6a5c;
+  --font-heading: Georgia, "Noto Serif KR", serif;
+  --font-body: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -145,6 +147,37 @@ section h2 {
 .feature h3 { font-size: 1.1rem; margin-bottom: 10px; }
 .feature p { color: var(--text-soft); font-size: 0.92rem; margin: 0; }
 
+/* Story / Diagrams */
+.diagrams { background: var(--cream); }
+
+.diagram-block {
+  max-width: 1080px;
+  margin: 0 auto 64px;
+  background: white;
+  border-radius: 16px;
+  padding: 32px 32px 28px;
+  box-shadow: 0 10px 30px rgba(43, 28, 20, 0.06);
+}
+
+.diagram-block:last-child { margin-bottom: 0; }
+
+.diagram-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 6px;
+}
+
+.diagram-block h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.diagram-svg { width: 100%; }
+.diagram-svg svg { width: 100%; height: auto; display: block; }
+
 /* Menu */
 .menu { background: var(--cream-dark); }
 
@@ -241,4 +274,5 @@ section h2 {
   .menu-grid { grid-template-columns: 1fr; }
   .location-inner { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
+  .diagram-block { padding: 24px 18px 20px; margin-bottom: 40px; }
 }
